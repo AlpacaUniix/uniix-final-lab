@@ -1,8 +1,8 @@
-nginx:
-  namespace: default
+alpacauniix:
+  namespace: final
   image: summer-devops-m1
   replicas: 1
-  host: final-lab.alpacauniix.eiei
+  host: final-lab.alpacauniix.website
   ingress:
     ingressClassName: nginx
   service:

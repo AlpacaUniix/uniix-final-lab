@@ -1,6 +1,6 @@
 alpacauniix:
   namespace: default
-  
+
   replicas: 1
   image:
     repository: alpacauniix/summer-devops-m1
@@ -10,4 +10,4 @@ alpacauniix:
     ingressClassName: nginx
   service:
     type: ClusterIP
-    port: 
+    port: 3000

@@ -1,5 +1,5 @@
 alpacauniix:
-  namespace: final
+  namespace: default
   image: summer-devops-m1
   replicas: 1
   host: final-lab.alpacauniix.website

@@ -1,0 +1,9 @@
+nginx:
+  namespace: default
+  image: summer-devops-m1
+  replicas: 1
+  host: nginx-test.arpo.website
+  ingress:
+    ingressClassName: nginx
+  service:
+    type: ClusterIP

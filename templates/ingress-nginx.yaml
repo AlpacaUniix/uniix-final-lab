@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: {{ .Release.Name }}
-  namespace: {{ .Values.alpacauniix.namespace }}
+  namespace: {{ .Values.alpacauniix.Namespace }}
   labels:
     app.kubernetes.io/name: {{ .Release.Name }}
 spec:

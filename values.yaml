@@ -1,9 +1,13 @@
 alpacauniix:
   namespace: default
-  image: summer-devops-m1
+  
   replicas: 1
+  image:
+    repository: alpacauniix/summer-devops-m1
+    tag: "latest"
   host: final-lab.alpacauniix.website
   ingress:
     ingressClassName: nginx
   service:
     type: ClusterIP
+    port: 

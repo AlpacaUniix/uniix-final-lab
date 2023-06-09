@@ -7,7 +7,7 @@ alpacauniix:
     tag: "latest"
   host: final-lab.alpacauniix.website
   ingress:
-    ingressClassName: nginx
+    ingressClassName: alpacauniix
   service:
     type: ClusterIP
     port: 3000

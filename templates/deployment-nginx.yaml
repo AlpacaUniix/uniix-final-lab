@@ -2,23 +2,23 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Release.Name }}
-  namespace: {{ .Values.nginx.namespace }}
+  namespace: {{ .Values.alpacauniix.namespace }}
   labels:
     app.kubernetes.io/name: {{ .Release.Name }}
 spec:
   selector:
     matchLabels:
-      app: nginx
+      app: alpacauniix
       app.kubernetes.io/name: {{ .Release.Name }}
-  replicas: {{ .Values.nginx.replicas }}
+  replicas: {{ .Values.alpacauniix.replicas }}
   template:
     metadata:
       labels:
-        app: nginx
+        app: alpacauniix
         app.kubernetes.io/name: {{ .Release.Name }}
     spec:
       containers:
-      - name: nginx
-        image: {{ .Values.nginx.image }}
+      - name: alpacauniix
+        image: {{ .Values.alpacauniix.image }}
         ports:
         - containerPort: 80
